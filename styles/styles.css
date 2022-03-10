@@ -1,6 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #005359;
+}
+h1{
+    float: left;
+    color: #D1E8E2;
+    padding: 30px 10px;
+}
+header{
+    height: 75px;
+    background-color: #282828;
+}
+
+.nav{
+    overflow: hidden;
+    background-color: #282828;
+}
+
+.navButton{
+
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 45px 10px 0px 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navButton:hover{
+    opacity: 50%;
+    transition: .1s;
+    
+}
+
+.selfieLogo{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    padding: 10px 10px;
+    float: left;
+}
+
 .skills
 {
     display: grid;
+    width: 800px;
+    height: 200px;
+    margin: auto;
     grid-template-columns: repeat(6, auto);
     gap: 20px;
     grid-template-rows: auto;
@@ -10,7 +60,9 @@
     border: 1px solid black;
 }
 h2{
-    text-align: center
+    padding: 20px;
+    text-align: center;
+    color: #D1E8E2;
 }
 
 .skillImage{
@@ -21,55 +73,3 @@ h2{
 }
 
 
-@media (max-width: 800px){
-
-    .skills
-{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 20px;
-    grid-template-rows: auto;
-    padding: auto;
-}
-.skills > div{
-    border: 1px solid black;
-}
-h2{
-    text-align: center
-}
-
-.skillImage{
-    width: 100px;
-    height: 100px;
-    border-radius: 10%;
-    margin: auto;
-}
-
-@media (max-width: 500px){
-
-    .skills
-{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 20px;
-    grid-template-rows: auto;
-    padding: auto;
-}
-.skills > div{
-    border: 1px solid black;
-}
-h2{
-    text-align: center
-}
-
-.skillImage{
-    width: 100px;
-    height: 100px;
-    border-radius: 10%;
-    margin: auto;
-}
-
-}
-
-
-}
